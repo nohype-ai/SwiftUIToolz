@@ -1,9 +1,12 @@
 // swift-tools-version:5.7
+
 import PackageDescription
 
 let package = Package(
     name: "SwiftUIToolz",
-    platforms: [.macOS(.v10_15)],
+    platforms: [
+        .iOS(.v13), .macOS(.v10_15), .tvOS(.v13), .watchOS(.v6)
+    ],
     products: [
         .library(
             name: "SwiftUIToolz",
@@ -12,19 +15,11 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/nohype-ai/GetLaid.git",
-            exact: "4.0.0"
+            url: "https://github.com/codeface-io/SwiftObserver.git",
+            exact: "8.0.0"
         ),
         .package(
-            url: "https://github.com/nohype-ai/SwiftObserver.git",
-            exact: "7.0.9"
-        ),
-        .package(
-            url: "https://github.com/nohype-ai/FoundationToolz.git",
-            exact: "0.3.1"
-        ),
-        .package(
-            url: "https://github.com/nohype-ai/SwiftyToolz.git",
+            url: "https://github.com/flowtoolz/SwiftyToolz.git",
             exact: "0.5.1"
         ),
     ],
@@ -32,10 +27,10 @@ let package = Package(
         .target(
             name: "SwiftUIToolz",
             dependencies: [
-                "GetLaid",
-                "FoundationToolz",
+                .product(name: "CombineObserver",
+                         package: "SwiftObserver"),
                 "SwiftObserver",
-                "SwiftyToolz",
+                "SwiftyToolz"
             ],
             path: "Code"
         ),

@@ -1,5 +1,5 @@
 # SwiftUIToolz
 
-A collection of tools for programmatic UI and SwiftUI. It's currently based on AppKit but will in the future move completely to SwiftUI and assimilate the code of [SwiftUIToolzOLD](https://github.com/nohype-ai/SwiftUIToolzOLD). Until then, this repo is not maintained or documented for others.
+A collection of SwiftUI extensions mostly used internally at Nohype AI.
 
-Check out my other open-source work instead under the [Nohype AI GitHub Orga](https://github.com/nohype-ai).
+Check out our official open-source work under the [Nohype AI GitHub Orga](https://github.com/nohype-ai).
