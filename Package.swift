@@ -12,24 +12,24 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/flowtoolz/SwiftUIToolzOLD.git",
-            exact: "0.3.8"
+            url: "https://github.com/nohype-ai/SwiftUIToolzOLD.git",
+            exact: "0.3.9"
         ),
         .package(
-            url: "https://github.com/flowtoolz/GetLaid.git",
+            url: "https://github.com/nohype-ai/GetLaid.git",
             exact: "4.0.0"
         ),
         .package(
-            url: "https://github.com/codeface-io/SwiftObserver.git",
-            exact: "7.0.8"
+            url: "https://github.com/nohype-ai/SwiftObserver.git",
+            exact: "7.0.9"
         ),
         .package(
-            url: "https://github.com/flowtoolz/FoundationToolz.git",
-            exact: "0.3.0"
+            url: "https://github.com/nohype-ai/FoundationToolz.git",
+            exact: "0.3.1"
         ),
         .package(
-            url: "https://github.com/flowtoolz/SwiftyToolz.git",
-            exact: "0.5.0"
+            url: "https://github.com/nohype-ai/SwiftyToolz.git",
+            exact: "0.5.1"
         ),
     ],
     targets: [
