@@ -12,10 +12,6 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/nohype-ai/SwiftUIToolzOLD.git",
-            exact: "0.3.9"
-        ),
-        .package(
             url: "https://github.com/nohype-ai/GetLaid.git",
             exact: "4.0.0"
         ),
@@ -36,7 +32,6 @@ let package = Package(
         .target(
             name: "SwiftUIToolz",
             dependencies: [
-                "SwiftUIToolzOLD",
                 "GetLaid",
                 "FoundationToolz",
                 "SwiftObserver",

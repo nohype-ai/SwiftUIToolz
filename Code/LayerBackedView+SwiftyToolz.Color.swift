@@ -1,4 +1,3 @@
-import SwiftUIToolzOLD
 import AppKit
 import SwiftyToolz
 
@@ -7,6 +6,11 @@ public extension LayerBackedView
     @available(macOS 11, *)
     func set(backgroundColor: SwiftyToolz.Color)
     {
-        layer?.backgroundColor = NSColor(backgroundColor).cgColor
+        let cgColor = CGColor(red: backgroundColor.red,
+                              green: backgroundColor.green,
+                              blue: backgroundColor.blue,
+                              alpha: backgroundColor.alpha)
+        
+        layer?.backgroundColor = cgColor
     }
 }
