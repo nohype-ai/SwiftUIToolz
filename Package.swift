@@ -15,11 +15,11 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/codeface-io/SwiftObserver.git",
+            url: "https://github.com/nohype-ai/SwiftObserver.git",
             exact: "8.0.0"
         ),
         .package(
-            url: "https://github.com/flowtoolz/SwiftyToolz.git",
+            url: "https://github.com/nohype-ai/SwiftyToolz.git",
             exact: "0.5.1"
         ),
     ],
