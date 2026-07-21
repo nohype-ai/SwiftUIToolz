@@ -16,11 +16,11 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/nohype-ai/SwiftObserver.git",
-            exact: "8.0.2"
+            exact: "8.0.3"
         ),
         .package(
             url: "https://github.com/nohype-ai/SwiftyToolz.git",
-            exact: "0.5.7"
+            exact: "0.5.8"
         ),
     ],
     targets: [
